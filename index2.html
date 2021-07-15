@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Demo-Website</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+              <a? class="navbar-brand" href="#">Navbar</a>
+              <div class="collapse navbar-collapse p-2 m-2" id="menu">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#isotop">Isotop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#fancybox">Fancybox</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+<!-- floating navbar for mobile device -->
+    <section class="mobile-nav d-md-none d-block">
+      <div class="menu js-menu">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+      </div>
+      <nav class="nav js-nav">
+        <ul class="nav__list js-nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#isotop" class="nav__link">Isotop</a></li>
+          <li class="nav__item"><a href="#fancybox" class="nav__link">Fancybox</a></li>
+        </ul>
+      </nav>
+    </section>
+<!-- floating navbar for mobile device -->
+
+
+
+<!-- isotop -->
+<section class="portfolio"  data-js="filtering-demo" id="isotop">
+  <div class="container" id="fancybox">
+    <ul class="filter-button-group">
+          <li class="p-2"><button class="btn btn-danger" data-filter="*">All Websites</button></li>
+          <li class="p-2"><button class="btn btn-danger" data-filter=".wp"> Wordpress</button></li>
+          <li class="p-2"><button class="btn btn-danger" data-filter=".bs"> Bootstrap</button></li>
+          <li class="p-2"><button class="btn btn-danger" data-filter=".ss"> Sass</button></li>
+          <li class="p-2"><button class="btn btn-danger" data-filter=".ht"> Html</button></li>
+    </ul>
+
+    <div class="row grid">
+      <div class="col-md-3 element-item ht bs">
+        <img src="images/isotop/10.png" alt="isotop-img">
+        <a href="images/isotop/10.png" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item ht">
+        <img src="images/isotop/9.jpg" alt="isotop-img">
+        <a href="images/isotop/9.jpg" data-fancybox="gallery" class="zoom rounded"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item wp ht">
+        <img src="images/isotop/11.png" alt="isotop-img">
+        <a href="images/isotop/11.png" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item wp ht bs">
+        <img src="images/isotop/book.png" alt="isotop-img">
+        <a href="images/isotop/book.png" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item wp ht bs ss">
+        <img src="images/isotop/clients.jpg" alt="isotop-img">
+        <a href="images/isotop/clients.jpg" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item wp ss">
+        <img src="images/isotop/icon.png" alt="isotop-img">
+        <a href="images/isotop/icon.png" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item bs ht">
+        <img src="images/isotop/illustration.png" alt="isotop-img">
+        <a href="images/isotop/illustration.png" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item ht wp">
+        <img src="images/isotop/learn.jpg" alt="isotop-img">
+        <a href="images/isotop/learn.jpg" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item ss bt">
+        <img src="images/isotop/people.png" alt="isotop-img">
+        <a href="images/isotop/people.png" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item wp ss ht">
+        <img src="images/isotop/school.png" alt="isotop-img">
+        <a href="images/isotop/school.png" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+      <div class="col-md-3 element-item bs ss ht">
+        <img src="images/isotop/11.png" alt="isotop-img">
+        <a href="images/isotop/10.png" data-fancybox="gallery" class="zoom"><i class="fas fa-search-plus"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- isotop -->
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="js/isotope-docs.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script>
+         $('.js-menu').on('click', () => {
+          $('.js-menu').toggleClass('active');
+          $('.js-nav').toggleClass('open');
+          $('.js-nav__list').toggleClass('show');
+        });
+    </script>
+
+
+  </body>
+</html>
