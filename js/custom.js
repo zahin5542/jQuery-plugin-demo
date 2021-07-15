@@ -65,4 +65,11 @@ jQuery(document).ready(function(){
   });
 
 
+  jQuery('.js-menu').on('click', () => {
+    jQuery('.js-menu').toggleClass('active');
+    jQuery('.js-nav').toggleClass('open');
+    jQuery('.js-nav__list').toggleClass('show');
+  });
+
+
 

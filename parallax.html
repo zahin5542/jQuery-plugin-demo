@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Demo-Website</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md d-md-block d-none">
+            <div class="container">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <div class="collapse navbar-collapse p-2 m-2" id="menu">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#parallax">Parallax</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html#owl">Owl</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html#slick">Slick</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index2.html">Fancybox/Isotop</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    
+<!-- floating navbar for mobile device -->
+<section class="mobile-nav d-md-none d-block">
+    <div class="menu js-menu">
+      <span class="menu__line"></span>
+      <span class="menu__line"></span>
+      <span class="menu__line"></span>
+    </div>
+    <nav class="nav js-nav">
+      <ul class="nav__list js-nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="index2.html" class="nav__link">Isotop</a></li>
+        <li class="nav__item"><a href="index2.html" class="nav__link">Fancybox</a></li>
+        <li class="nav__item"><a href="index.html#owl" class="nav__link">Owl-carousel</a></li>
+        <li class="nav__item"><a href="index.html#slick" class="nav__link">Slick-slider</a></li>
+      </ul>
+    </nav>
+  </section>
+<!-- floating navbar for mobile device -->
+
+
+
+ <!-- parallax -->
+ <section class="parallax-section" id="parallax">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/6.jpg">
+      <div class="container">   
+      <h1>Parallax jQuery Design</h1>
+      </div>
+    </div>
+
+  </section>
+
+      <!-- parallax -->
+
+
+
+          
+ <!-- parallax -->
+ <section class="parallax-section" id="parallax">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/1.jpg">
+      <div class="container">   
+        <div class="container py-5">
+            <div class="row py-5 g-0">
+                  <div class="box ">
+                       <img src="images/3.jpg" alt="advert" class="w-100">
+                       <h3>Welcome to Animation within parallax demo</h3>
+                       <a href="#" class="btn btn-danger">View More</a>
+                       <div class="offer">
+                         
+                         <h2>50% DISCOUNT</h2>
+                       </div>
+                  </div>
+             </div>
+           </div>
+      </div>
+    </div>
+
+  </section>
+
+      <!-- parallax -->
+
+      
+              <!-- position -->
+<section class="position-section">
+    <div class="container py-5">
+      <div class="row py-5 g-0">
+            <div class="box ">
+                 <img src="images/3.jpg" alt="advert" class="w-100">
+                 <h3>Welcome to Animation demo</h3>
+                 <a href="#" class="btn btn-danger">View More</a>
+                 <div class="offer">
+                   
+                   <h2>50% DISCOUNT</h2>
+                 </div>
+            </div>
+       </div>
+     </div>
+  </section>
+          
+          <!-- position -->
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="js/parallax.min.js"></script>
+
+<script>
+        $('.js-menu').on('click', () => {
+        $('.js-menu').toggleClass('active');
+        $('.js-nav').toggleClass('open');
+        $('.js-nav__list').toggleClass('show');
+      });
+</script>
+
+
+
+  </body>
+</html>

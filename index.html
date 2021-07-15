@@ -19,27 +19,23 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-md sticky-top">
+        <nav class="navbar navbar-expand-md d-md-block d-none">
             <div class="container">
               <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </button>
               <div class="collapse navbar-collapse p-2 m-2" id="menu">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="#owl">Owl</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#modal">Modal</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="#slick">Slick</a>
                   </li>
+                  
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#parallax">Parallax</a>
+                    <a class="nav-link " aria-current="page" href="#animation">Animation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="parallax.html">Parallax</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="index2.html">Fancybox/Isotop</a>
@@ -50,6 +46,29 @@
             </div>
           </nav>
     </header>
+
+    
+<!-- floating navbar for mobile device -->
+<section class="mobile-nav d-md-none d-block">
+  <div class="menu js-menu">
+    <span class="menu__line"></span>
+    <span class="menu__line"></span>
+    <span class="menu__line"></span>
+  </div>
+  <nav class="nav js-nav">
+    <ul class="nav__list js-nav__list">
+      <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+      <li class="nav__item"><a href="index2.html" class="nav__link">Isotop</a></li>
+      <li class="nav__item"><a href="index2.html" class="nav__link">Fancybox</a></li>
+      <li class="nav__item"><a href="#owl" class="nav__link">Owl-carousel</a></li>
+      <li class="nav__item"><a href="#slick" class="nav__link">Slick-slider</a></li>
+      <li class="nav__item"><a href="parallax.html" class="nav__link">Parallax</a></li>
+      <li class="nav__item"><a href="#animation" class="nav__link">Animation</a></li>
+    </ul>
+  </nav>
+</section>
+<!-- floating navbar for mobile device -->
+
 
 
     <!-- card -->
@@ -106,7 +125,7 @@
 <section class="position-section">
   <div class="container py-5">
     <div class="row py-5 g-0">
-          <div class="box ">
+          <div class="box "  id="#animation">
                <img src="images/3.jpg" alt="advert" class="w-100">
                <h3>Welcome to Animation demo</h3>
                <a href="#" class="btn btn-danger">View More</a>
@@ -176,18 +195,7 @@
     </section>
     <!-- buble/circle -->
 
-    <!-- parallax -->
-    <section class="parallax-section" id="parallax">
-      <div class="parallax-window" data-parallax="scroll" data-image-src="images/1.jpg">
-        <div class="container">   
-        <h1>parallax Jquery Design</h1>
-        </div>
-      </div>
-
-    </section>
-
-
-        <!-- parallax -->
+   
 
 
 <!-- slick -->
@@ -241,13 +249,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
-    <script src="js/parallax.min.js"></script>
 
 
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slick.js"></script>
-
-
     <script src="js/custom.js"></script>
 
 

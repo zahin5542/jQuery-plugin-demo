@@ -131,19 +131,14 @@ $themeColor: #fff;
 }
 
 header {
-  .sticky-top {
-    position: sticky;
-    top: 0;
-
-    .nav-link {
-      color: #333 !important;
-      margin-left: 10px;
-    }
-    .active {
-      background-color: seagreen;
-      border-radius: 15px;
-      color: #fff !important;
-    }
+  .nav-link {
+    color: #333 !important;
+    margin-left: 10px;
+  }
+  .active {
+    background-color: seagreen;
+    border-radius: 15px;
+    color: #fff !important;
   }
 }
 
